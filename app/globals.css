@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(100deg, #00796b 70%, #00bfa5 30%);
+  color: #fff;
+  font-weight: normal;
+  line-height: 25px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 700;
+  padding-top: 7px;
+  font-size: inherit;
+}
+h1 {
+  font-size: 2em;
+}
+.pd {
+  margin-left: 0.3em;
+}
+.pd3 {
+  margin-left: 0.5em;
+}
+.wh,
+.np {
+  margin-top: 0.8em;
+}
+
+.clearboth {
+  margin-top: 2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.2em;
+}
+p {
+  margin: 1rem;
+}
+ul li {
+  list-style: none;
+}
+li a {
+  color: rgb(109, 230, 199);
+  text-decoration: none;
+}
+.container {
+  max-width: 900px;
+  border: solid 0px #e7e7de;
+  margin: auto;
+  height: 100%;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 4em;
+}
+
+.profile {
+  flex: 1;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile--pic {
+  width: 150px;
+  height: 150px;
+  border: solid 4px #e7e7de;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sect {
+  width: 100%;
+  height: auto !important;
+  border-top: #e7e7de solid 1px;
+  clear: both;
+  margin-top: 20px;
+  padding: 20px;
+  border: solid 1px;
+  border-radius: 25px 0 25px 0;
+}
+.stacks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 5px;
+}
+.stack {
+  padding: 0.5em 1em;
+  border: solid 1px;
+  border-radius: 7px;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+.social a {
+  font-size: 0.9em;
+  font-weight: 300;
+  transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social a:hover {
+  font-size: 0.9em;
+  color: rgb(109, 230, 199);
+  text-decoration: underline;
+}
+
+/* break points */
+
+@media (max-width: 660px) {
+  body {
+    background: linear-gradient(80deg, #00796b 70%, #00bfa5 30%);
+  }
+  .container {
+    width: 100%;
+    padding: 3px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+
+  .hero .profile--pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero .content {
+    width: 100vh;
+  }
+}
